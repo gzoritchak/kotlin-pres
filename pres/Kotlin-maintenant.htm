@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://yole.ru/presentations/presentations/kotlin-ejug-vienna-oct2012.html#slide-6 -->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ready" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Kotlin Programming Language</title>
+	
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="./files/deck.core.css">
+	<link rel="stylesheet" href="./files/deck.goto.css">
+	<link rel="stylesheet" href="./files/deck.menu.css">
+	<link rel="stylesheet" href="./files/deck.navigation.css">
+	<link rel="stylesheet" href="./files/deck.status.css">
+	<link rel="stylesheet" href="./files/deck.hash.css">
+	<link rel="stylesheet" href="./files/deck.scale.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="./files/jetbrains.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="./files/horizontal-slide.css">
+	
+	<script src="./files/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container deck-scale on-slide-slide-6 on-slide-6">
+
+<div class="jetbrains-footer">
+    <!--
+   <a href="http://www.jetbrains.com/kotlin/">www.jetbrains.com/kotlin/</a>
+   -->
+</div>
+
+<!-- Begin slides -->
+<section class="slide deck-before" id="title-slide">
+    <div class="deck-slide-scaler"><div>
+        <div class="vcenter">
+            <h1>Kotli</h1>
+            <h2>Dmitry Jemerov, <a href="http://www.jetbrains.com/">JetBrains</a></h2>
+            <p><img src="./files/projectKotlin.png"></p>
+        </div>
+    </div></div>
+</section>
+
+<!--
+
+<section class="slide" id="outline">
+    <h2>Outline</h2>
+    <ul>
+        <li>Overview and Background</li>
+        <li>Language Features by Example</li>
+        <li>IntelliJ IDEA Plugin Demo</li>
+    </ul>
+    <p>Feel free to ask questions as I go!</p>
+</section>
+-->
+
+
+<section class="slide deck-child-current deck-before" id="what-is-kotlin">
+    <div class="deck-slide-scaler deck-child-current" style=""><h2>What is Kotlin</h2><ul class="deck-child-current">
+        <li class="slide deck-before" id="slide-2">New programming language created at JetBrains</li>
+        <li class="slide deck-before" id="slide-3">Statically typed</li>
+        <li class="slide deck-before" id="slide-4">General-purpose</li>
+        <li class="slide deck-previous" id="slide-5">Targeting the JVM and JavaScript</li>
+        <li class="slide deck-current" id="slide-6">Developed as open-source with community contributions</li>
+        <!--<li class="slide">available today as pre-beta (M2) release</li>-->
+    </ul></div>
+    
+</section>
+
+<section class="slide deck-next" id="what-is-jetbrains">
+    <div class="deck-slide-scaler" style=""><h2>Background: JetBrains</h2><div>
+        <img src="./files/logo_intellij_idea.gif">
+    </div><div>
+        <img src="./files/logo_resharper.gif">
+    </div><div>
+        <img src="./files/logos-platform.png">
+    </div><div>
+        <img src="./files/logos-serverside.png">
+    </div></div>
+    <!--<img src="../pictures/jetbrains-products.png">-->
+    
+    
+    
+    
+</section>
+
+<!--
+<section class="slide" id="kotlin-map">
+    <h2>Kotlin</h2>
+    <img src="../pictures/kotlin-map.png">
+</section>
+-->
+
+<section class="slide deck-after" id="motivation">
+    <div class="deck-slide-scaler" style=""><h2>Background</h2><ul>
+        <li>Started in mid 2010</li>
+        <li>Vast majority of non-.NET tools developed in Java</li>
+        <li>None of other JVM languages existing at the time seen as adequate replacement</li>
+        <li>Must be able to incrementally migrate existing Java codebases<br>
+            <small>&gt;50k classes, 10 years old</small></li>
+    </ul></div>
+    
+</section>
+
+<section class="slide deck-after" id="design-goals">
+    <div class="deck-slide-scaler" style=""><h2>Design Goals</h2><ul class="">
+        <li class="slide deck-after" id="slide-10">Full Java interoperability<br>
+            <small>generics, overloading, arrays, primitives...</small></li>
+        <li class="slide deck-after" id="slide-11">Compiles and runs as fast as Java</li>
+        <li class="slide deck-after" id="slide-12">More&nbsp;expressive&nbsp;than&nbsp;Java</li>
+        <li class="slide deck-after" id="slide-13">Prevents more kinds of errors than&nbsp;Java</li>
+        <li class="slide deck-after" id="slide-14">Simple enough to learn for ordinary programmers</li>
+        <li class="slide deck-after" id="slide-15">Efficient tooling from the very beginning</li>
+    </ul></div>
+    
+</section>
+
+<section class="slide deck-after" id="design-non-goals">
+    <div class="deck-slide-scaler" style=""><h2>Design Non-Goals</h2><ul class="">
+        <li class="slide deck-after" id="slide-17">Providing groundbreaking new features</li>
+        <li class="slide deck-after" id="slide-18">Publishing research papers</li>
+        <li class="slide deck-after" id="slide-19">Deriving the entire language from a small set of core concepts</li>
+        <li class="slide deck-after" id="slide-20">Replacing the entire library ecosystem</li>
+        <li class="slide deck-after" id="slide-21">Solving the concurrency problem</li>
+    </ul></div>
+    
+</section>
+
+<!--
+<section class="slide" id="performance">
+    <h2>Performance</h2>
+    <ul>
+        <li>Straightforward, Java-like generated bytecode</li>
+        <li>No constant runtime overhead</li>
+        <li>No boxing for non-nullable primitive types</li>
+    </ul>
+</section>
+-->
+
+<!--
+<section class="slide" id="easy-to-learn">
+    <h2>Easy to Learn</h2>
+    <ul>
+        <li>Not a research project</li>
+        <li>"Too few exciting features" is a feature</li>
+        <li>Building upon skills learned from other languages<br>
+        <small>Groovy, Scala, C#, Gosu...</small></li>
+    </ul>
+</section>
+-->
+
+<!--
+<section class="slide" id="target-audience">
+    <h2>Target Audience</h2>
+    <ul>
+        <li>Large projects with non-uniform structure<br>
+            <small>Not just model/view/controller</small>
+        </li>
+        <li>Performance-critical projects<br>
+            <small>Infrastructure, libraries etc.</small>
+        </li>
+    </ul>
+</section>
+-->
+
+<!--
+<section class="slide" id="features-traditional">
+    <h2>Features: Traditional</h2>
+    <ul>
+        <li>Properties</li>
+        <li>First-class functions (closures)</li>
+        <li>Pattern matching</li>
+        <li>Operator overloading</li>
+        <li>Local type inference</li>
+        <li>String interpolation</li>
+    </ul>
+</section>
+
+<section class="slide" id="features-distinguishing">
+    <h2>Features: Distinguishing</h2>
+    <ul>
+        <li>Traits (multiple inheritance of behavior)</li>
+        <li>Extension functions</li>
+        <li>Static null-safety guarantees</li>
+        <li>Implicit casts after type checks</li>
+        <li>Inline functions (zero-overhead closures)</li>
+        <li>First-class delegation</li>
+        <li>Build infrastructure (modules) as part of the language</li>
+    </ul>
+</section>
+-->
+
+<section class="slide deck-after" id="hello-world">
+    <div class="deck-slide-scaler" style=""><h2>Hello World</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">package</span><span style="background-color:#ffffff;"> hello        </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// optional semicolons
+
+// namespace-level functions
+// types on the right
+// no special syntax for arrays
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> main(args: Array&lt;String&gt;): Unit {
+    </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Hello, world!"</span><span style="background-color:#ffffff;">)
+}</span></code></pre></div>
+
+</section>
+
+<section class="slide deck-after" id="helloClass">
+    <div class="deck-slide-scaler" style=""><h2>Classes</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> User(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">name</span><span style="background-color:#ffffff;">: String,     </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// primary constructor
+</span><span style="background-color:#ffffff;">           </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">age</span><span style="background-color:#ffffff;">: Int) {
+    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// name and age become public properties
+
+</span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> fullName() = </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">name</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">, age </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">age</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"
+</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// shorthand syntax for single-expression functions
+</span><span style="background-color:#ffffff;">}
+
+</span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(User(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"John Doe"</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">30</span><span style="background-color:#ffffff;">).fullName())
+</span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// no 'new' in constructor calls</span></code></pre></div>
+
+</section>
+
+<section class="slide deck-after" id="traits">
+    <div class="deck-slide-scaler" style=""><h2>Traits</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">trait</span><span style="background-color:#ffffff;"> StuffContainer {
+  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> isEmpty(): Boolean    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// abstract by default
+</span><span style="background-color:#ffffff;">  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> containsStuff(): Boolean = !isEmpty()
+}
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> MyList&lt;T&gt;() : ArrayList&lt;T&gt;(), StuffContainer
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> list = MyList&lt;String&gt;()
+list.add(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"foo"</span><span style="background-color:#ffffff;">)
+</span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(list.containsStuff())</span></code></pre></div>
+
+</section>
+
+
+<section class="slide deck-after" id="extensionFunctions">
+    <div class="deck-slide-scaler" style=""><h2>Extension Functions</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> String.iterator() = StringIterator(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">this</span><span style="background-color:#ffffff;">)
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// 'this' means object on which extension function was invoked
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> StringIterator(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">s</span><span style="background-color:#ffffff;">: String) : Iterator&lt;Char&gt; {
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">private</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">var</span><span style="background-color:#ffffff;"> </span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">i</span></span><span style="background-color:#ffffff;"> = </span><span style="color:#0000ff;background-color:#ffffff;">0
+</span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">public</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">override</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> next(): Char = </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">s</span><span style="background-color:#ffffff;">[</span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">i</span></span><span style="background-color:#ffffff;">++]
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">public</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">override</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">hasNext</span><span style="background-color:#ffffff;">: Boolean
+        </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">get</span><span style="background-color:#ffffff;">() = </span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">i</span></span><span style="background-color:#ffffff;"> &lt; </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">s</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">size</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// property getter
+</span><span style="background-color:#ffffff;">}
+
+<span style="color:#000080;background-color:#ffffff;font-weight:bold;">for</span><span style="background-color:#ffffff;"> (c </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">in</span><span style="background-color:#ffffff;"> </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"abcd"</span><span style="background-color:#ffffff;">) {  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// calls "abcd".iterator()
+</span><span style="background-color:#ffffff;">    </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(c)
+}</span></span></code></pre></div>
+
+</section>
+
+<section class="slide deck-after" id="functionLiterals">
+    <div class="deck-slide-scaler" style=""><h2>Function Literals</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> users = arrayList(
+        User(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"John Doe"</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">30</span><span style="background-color:#ffffff;">),
+        User(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Jane Doe"</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">27</span><span style="background-color:#ffffff;">))
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// fun arrayList&lt;T&gt;(vararg values: T) : ArrayList&lt;T&gt;
+
+</span><span style="background-color:#ffffff;"></span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> ages = users.map { it.age }
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// users.map({ (u: User) -&gt; u.age})
+</span><span style="background-color:#ffffff;">  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// 'it' is implicit closure parameter
+</span><span style="background-color:#ffffff;">  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// closure can be outside of parentheses
+</span>
+<span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Youngest user is </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">${</span><span style="background-color:#ffffff;">ages.</span><span style="background-color:#ffffff;font-style:italic;">min</span><span style="background-color:#ffffff;">()</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">}</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> years old"</span><span style="background-color:#ffffff;">)</span></code></pre></div>
+
+</section>
+
+
+<section class="slide deck-after" id="multi-assignment">
+    <div class="deck-slide-scaler" style=""><h2>Multi-Assignment</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> map = hashMap(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"one"</span><span style="background-color:#ffffff;"> to </span><span style="color:#0000ff;background-color:#ffffff;">1</span><span style="background-color:#ffffff;">, </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"two"</span><span style="background-color:#ffffff;"> to </span><span style="color:#0000ff;background-color:#ffffff;">2</span><span style="background-color:#ffffff;">, </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"three"</span><span style="background-color:#ffffff;"> to </span><span style="color:#0000ff;background-color:#ffffff;">3</span><span style="background-color:#ffffff;">)
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// fun &lt;A,B&gt; A.to(that: B): Pair&lt;A, B&gt; = Pair(this, that)
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> (k1, v1) = map.iterator().next()
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// k1 = map.iterator().next().component1()
+</span><span style="background-color:#ffffff;">  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// v1 =                      .component2()
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">for</span><span style="background-color:#ffffff;"> ((k, v) </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">in</span><span style="background-color:#ffffff;"> map) {
+    println(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">k</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> -&gt; </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">v</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="background-color:#ffffff;">)
+}</span></code></pre></div>
+
+</section>
+
+<section class="slide deck-after" id="operator-overloading">
+    <div class="deck-slide-scaler" style=""><h2>Operator Overloading</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> BigDecimal.minus(other: BigDecimal) = </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">this</span><span style="background-color:#ffffff;">.subtract(other)
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// 'minus' function corresponds to '-' operator
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> String.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">bd</span><span style="background-color:#ffffff;"> : BigDecimal
+  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">get</span><span style="background-color:#ffffff;">() = BigDecimal(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">this</span><span style="background-color:#ffffff;">)
+    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// extension property (may not have backing field)
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> a = </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"2.0"</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">bd
+</span><span style="background-color:#ffffff;"></span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> b = </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"1.10"</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">bd
+</span><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(a - b)</span></code></pre></div>
+
+</section>
+
+<section class="slide deck-after" id="nullability">
+    <div class="deck-slide-scaler" style="-webkit-transform: scale(0.9670588235294117);"><h2>Nullability</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> f = File(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"readme.txt"</span><span style="background-color:#ffffff;">)
+</span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">f</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> has </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">${</span><span style="background-color:#ffffff;">f.listFiles()</span><span style="text-decoration:underline;color:#ff0000"><span style="background-color:#ffffff;">.</span></span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">size</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">}</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> children"</span><span style="background-color:#ffffff;">)</span></code></pre><div style="background-color: #ffff99; border: 5px #000000;">Only safe calls (?.) are allowed on a nullable receiver of type jet.Array&lt;java.io.File?&gt;?</div><div class="slide deck-after" id="slide-30">
+    <h3>Safe Calls</h3>
+    <pre><code>f.listFiles()?.size() ?: 0</code></pre>
+    </div><div class="slide deck-after" id="slide-31">
+    <h3>Data Flow</h3>
+<pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> f = File(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"readme.txt"</span><span style="background-color:#ffffff;">)
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> files = f.listFiles()
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">if</span><span style="background-color:#ffffff;"> (files != </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">null</span><span style="background-color:#ffffff;">) {
+    </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">f</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> has </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">${</span><span style="background-color:#dbffdb;">files</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">size</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">}</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;"> children"</span><span style="background-color:#ffffff;">)
+}</span></code></pre>
+</div></div>
+
+
+    
+    
+    
+</section>
+
+<section class="slide deck-after" id="extann">
+    <div class="deck-slide-scaler" style=""><h2>External Annotations</h2><img src="./files/extann.png"></div>
+    
+</section>
+
+<!--
+<section class="slide" id="autocasts">
+    <h2>Smart Casts</h2>
+<pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">trait</span><span style="background-color:#ffffff;"> Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Number(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">value</span><span style="background-color:#ffffff;">: Int): Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Sum(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">left</span><span style="background-color:#ffffff;">: Expr, </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">right</span><span style="background-color:#ffffff;">: Expr): Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Mult(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">left</span><span style="background-color:#ffffff;">: Expr, </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">right</span><span style="background-color:#ffffff;">: Expr): Expr
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> eval(e: Expr): Int {
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">if</span><span style="background-color:#ffffff;"> (e </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">is</span><span style="background-color:#ffffff;"> Number)
+        </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">return</span><span style="background-color:#ffffff;"> </span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">value
+
+</span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">if</span><span style="background-color:#ffffff;"> (e </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">is</span><span style="background-color:#ffffff;"> Sum)
+        </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">return</span><span style="background-color:#ffffff;"> </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">left</span><span style="background-color:#ffffff;">) + </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">right</span><span style="background-color:#ffffff;">)
+
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">throw</span><span style="background-color:#ffffff;"> IllegalArgumentException(
+        </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Unknown expression: </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">e</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="background-color:#ffffff;">)
+}</span></code></pre>
+</section>
+-->
+
+<section class="slide deck-after" id="pama">
+    <div class="deck-slide-scaler" style=""><h2>Pattern Matching and Smart Casts</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">trait</span><span style="background-color:#ffffff;"> Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Number(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">value</span><span style="background-color:#ffffff;">: Int): Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Sum(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">left</span><span style="background-color:#ffffff;">: Expr, </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">right</span><span style="background-color:#ffffff;">: Expr): Expr
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Mult(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">left</span><span style="background-color:#ffffff;">: Expr, </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">right</span><span style="background-color:#ffffff;">: Expr): Expr
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> eval(e: Expr): Int = </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">when</span><span style="background-color:#ffffff;">(e) {
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">is</span><span style="background-color:#ffffff;"> Number -&gt; </span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">value
+</span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">is</span><span style="background-color:#ffffff;"> Sum -&gt; </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">left</span><span style="background-color:#ffffff;">) + </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">right</span><span style="background-color:#ffffff;">)
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">is</span><span style="background-color:#ffffff;"> Mult -&gt; </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">left</span><span style="background-color:#ffffff;">) * </span><span style="background-color:#ffffff;font-style:italic;">eval</span><span style="background-color:#ffffff;">(</span><span style="background-color:#dbffdb;">e</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">right</span><span style="background-color:#ffffff;">)
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">else</span><span style="background-color:#ffffff;"> -&gt; </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">throw</span><span style="background-color:#ffffff;"> IllegalArgumentException(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Can't eval </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="background-color:#ffffff;">e</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="background-color:#ffffff;">)
+}</span></code></pre></div>
+
+</section>
+
+<!--
+<section class="slide" id="annotations">
+    <h2>Annotations</h2>
+<pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">import</span><span style="background-color:#ffffff;"> org.junit.Assert.*
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">import</span><span style="background-color:#ffffff;"> org.junit.Test </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">as</span><span style="background-color:#ffffff;"> test
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">import</span><span style="background-color:#ffffff;"> org.junit.Before </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">as</span><span style="background-color:#ffffff;"> setup
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">import</span><span style="background-color:#ffffff;"> org.junit.After </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">as</span><span style="background-color:#ffffff;"> teardown
+
+</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> Tests {
+    </span><span style="color:#800d05;background-color:#ffffff;">setup</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> before() {
+        </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// Set up fixture
+</span><span style="background-color:#ffffff;">    }
+
+    </span><span style="color:#800d05;background-color:#ffffff;">test</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> simple() {
+        </span><span style="background-color:#ffffff;font-style:italic;">assertEquals</span><span style="background-color:#ffffff;">(</span><span style="color:#0000ff;background-color:#ffffff;">4</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">2</span><span style="background-color:#ffffff;"> * </span><span style="color:#0000ff;background-color:#ffffff;">2</span><span style="background-color:#ffffff;">)
+    }
+
+    </span><span style="color:#800d05;background-color:#ffffff;">teardown</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> after() {
+        </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// Clean up
+</span><span style="background-color:#ffffff;">    }
+}</span></code></pre>
+</section>
+-->
+
+<section class="slide deck-after" id="typesafe-builders">
+    <div class="deck-slide-scaler" style=""><h2>Typesafe Builders</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> result = </span><span style="background-color:#ffffff;font-style:italic;">html</span><span style="background-color:#ffffff;"> </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">  head </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">    title </span><span style="background-color:#ffffff;font-weight:bold;">{</span><span style="background-color:#ffffff;">+</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"XML encoding with Kotlin"</span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">  </span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">  body </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">    h1 </span><span style="background-color:#ffffff;font-weight:bold;">{</span><span style="background-color:#ffffff;">+</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"XML encoding with Kotlin"</span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">    p </span><span style="background-color:#ffffff;font-weight:bold;">{</span><span style="background-color:#ffffff;">+</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"this format can be used as an alternative markup to XML"</span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">
+    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// an element with attributes and text content
+</span><span style="background-color:#ffffff;">    a(href = </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"http://jetbrains.com/kotlin"</span><span style="background-color:#ffffff;">) {+</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Kotlin"</span><span style="background-color:#ffffff;">}
+  </span><span style="background-color:#ffffff;font-weight:bold;">}
+}
+</span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(result)</span></code></pre></div>
+<!--
+<pre><code><span style="background-color:#ffffff;">frame(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Kool Kotlin Swing Demo"</span><span style="background-color:#ffffff;">) </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">    exitOnClose()
+    size = #(</span><span style="color:#0000ff;background-color:#ffffff;">500</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">300</span><span style="background-color:#ffffff;">)
+
+    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> textArea = JTextArea(greeting)
+
+    center = textArea
+    south = borderPanel </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">        west = button(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Clear"</span><span style="background-color:#ffffff;">) </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">            textArea.setText(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">""</span><span style="background-color:#ffffff;">)
+        </span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">        east = button(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Restore"</span><span style="background-color:#ffffff;">) </span><span style="background-color:#ffffff;font-weight:bold;">{
+</span><span style="background-color:#ffffff;">            textArea.setText(greeting)
+        </span><span style="background-color:#ffffff;font-weight:bold;">}
+</span><span style="background-color:#ffffff;">    </span><span style="background-color:#ffffff;font-weight:bold;">}
+}</span><span style="background-color:#ffffff;">.setVisible(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">true</span><span style="background-color:#ffffff;">)</span></code></pre>
+-->
+
+</section>
+
+<section class="slide deck-after" id="typesafe-builders-implementation">
+    <div class="deck-slide-scaler" style=""><h2>Typesafe Builders: Implementation</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">abstract</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> TagWithText(name : String) : Tag(name) {
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// unary '+' operator as extension function in class scope
+</span><span style="background-color:#ffffff;">  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// unary operator argument becomes 'this' inside 'plus'
+</span><span style="background-color:#ffffff;">  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> String.plus() {
+    </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">children</span><span style="background-color:#ffffff;">.add(TextElement(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">this</span><span style="background-color:#ffffff;">))
+  }
+}
+</span></code></pre><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> HTML() : TagWithText(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"html"</span><span style="background-color:#ffffff;">) {
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// 'head' and 'body' accept extension function literals
+</span><span style="background-color:#ffffff;">  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> head(init : Head.() -&gt; Unit) = initTag(Head(), init)
+
+  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> body(init : Body.() -&gt; Unit) = initTag(Body(), init)
+}</span></code></pre></div>
+
+
+</section>
+
+<!--
+
+<section class="slide" id="more-features">
+    <h2>More Features</h2>
+    <ul>
+        <li>Inline functions (zero-overhead closures)</li>
+        <li>First-class delegation</li>
+        <li>Modules (build infrastructure) as part of the language</li>
+        <li>Declaration site variance</li>
+        <li>and more to come...</li>
+    </ul>
+</section>
+-->
+
+<!--
+<section class="slide" id="libraries">
+    <h2>Kotlin Libraries</h2>
+    <ul>
+        <li>Not trying to replace the JDK or ecosystem</li>
+        <li>Extension functions for JDK classes</li>
+        <li>Play! Framework integration planned for Web development</li>
+    </ul>
+</section>
+-->
+
+<section class="slide deck-after" id="collections">
+    <div class="deck-slide-scaler" style=""><h2>Kotlin Collections</h2><img style="width: 95%;" src="./files/Collections.png"></div>
+    
+</section>
+
+<section class="slide deck-after" id="tools">
+    <div class="deck-slide-scaler" style=""><h2>Kotlin Tools</h2><ul class="">
+        <li class="slide deck-after" id="slide-38">Java to Kotlin converter</li>
+        <li class="slide deck-after" id="slide-39">kdoc – documentation generator</li>
+        <li class="slide deck-after" id="slide-40">KAnnotator – infer nullity from Java bytecode</li>
+        <li class="slide deck-after" id="slide-41">REPL (work in progress)</li>
+    </ul></div>
+    
+</section>
+
+<section class="slide deck-after" id="tooling">
+    <div class="deck-slide-scaler" style=""><h2>Kotlin Environment</h2><ul class="">
+        <li class="slide deck-after" id="slide-43">IntelliJ IDEA plugin</li>
+        <li class="slide deck-after" id="slide-44">JavaScript backend</li>
+        <li class="slide deck-after" id="slide-45">Android development support</li>
+        <li class="slide deck-after" id="slide-46">Building via Ant, Maven and Gradle</li>
+        <li class="slide deck-after" id="slide-47">and more to come...</li>
+    </ul></div>
+    
+</section>
+
+<section class="slide deck-after" id="demo-slide">
+    <div class="deck-slide-scaler"><div>
+        <h1>IntelliJ IDEA<br>Plugin Demo</h1>
+    </div></div>
+</section>
+
+<section class="slide deck-after" id="summary">
+    <div class="deck-slide-scaler" style=""><h2>Summary</h2><ul class="">
+        <li class="slide deck-after" id="slide-50">Kotlin is ready for you to try today</li>
+        <li class="slide deck-after" id="slide-51">Kotlin fits nicely into existing projects</li>
+        <li class="slide deck-after" id="slide-52">Kotlin is a pleasure to develop in</li>
+    </ul></div>
+    
+</section>
+
+
+<section class="slide deck-after" id="try-kotlin">
+    <div class="deck-slide-scaler" style=""><h2>Try Kotlin Now</h2><p><a href="http://kotlin-demo.jetbrains.com/">http://kotlin-demo.jetbrains.com</a></p></div>
+    
+    <!--<p>Includes an experimental <strong>JavaScript backend</strong></p>-->
+</section>
+
+<section class="slide deck-after" id="get-kotlin">
+    <div class="deck-slide-scaler" style=""><h2>Get Kotlin</h2><p><a href="http://jetbrains.com/kotlin">http://jetbrains.com/kotlin</a></p></div>
+    
+<!--
+    <ul>
+        <li>Patches</li>
+        <li>Libraries</li>
+        <li>Tools</li>
+    </ul>
+-->
+</section>
+
+<section class="slide deck-after" id="resources">
+    <div class="deck-slide-scaler" style=""><h2>Resources</h2><table>
+        <tbody><tr><td>GitHub:&nbsp;&nbsp;</td><td><a href="http://www.github.com/jetbrains/kotlin/">http://www.github.com/JetBrains/kotlin/</a></td></tr>
+        <!--<tr><td>Documentation:&nbsp;&nbsp;</td><td><a href="http://www.jetbrains.com/kotlin/">http://www.jetbrains.com/kotlin/</a></td></tr>-->
+        <tr><td>Blog:</td><td><a href="http://blog.jetbrains.com/kotlin/">http://blog.jetbrains.com/kotlin/</a></td></tr>
+        <tr><td>Forum:</td><td><strong>Kotlin</strong> at <a href="http://devnet.jetbrains.net/">http://devnet.jetbrains.net</a></td></tr>
+        <tr><td>Twitter:</td><td><a href="http://twitter.com/project_kotlin">@project_kotlin</a></td></tr>
+        <tr><td>Issue tracker:</td><td><a href="http://youtrack.jetbrains.com/issues/KT">http://youtrack.jetbrains.com/issues/KT</a></td></tr>
+    </tbody></table><p></p><h3>Contributors welcome!</h3></div>
+    
+
+    
+    
+</section>
+
+
+<section class="slide deck-after" id="qa-slide">
+    <div class="deck-slide-scaler"><div>
+        <h1>Q&amp;A</h1>
+    </div></div>
+</section>
+
+<!-- deck.navigation snippet -->
+<a href="http://yole.ru/presentations/presentations/kotlin-ejug-vienna-oct2012.html#slide-5" class="deck-prev-link" title="Previous">←</a>
+<a href="http://yole.ru/presentations/presentations/kotlin-ejug-vienna-oct2012.html#what-is-jetbrains" class="deck-next-link" title="Next">→</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current">7</span>
+	/
+	<span class="deck-status-total">57</span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="http://yole.ru/presentations/presentations/" method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"><option value="title-slide"></option><option value="what-is-kotlin"></option><option value="slide-2"></option><option value="slide-3"></option><option value="slide-4"></option><option value="slide-5"></option><option value="slide-6"></option><option value="what-is-jetbrains"></option><option value="motivation"></option><option value="design-goals"></option><option value="slide-10"></option><option value="slide-11"></option><option value="slide-12"></option><option value="slide-13"></option><option value="slide-14"></option><option value="slide-15"></option><option value="design-non-goals"></option><option value="slide-17"></option><option value="slide-18"></option><option value="slide-19"></option><option value="slide-20"></option><option value="slide-21"></option><option value="hello-world"></option><option value="helloClass"></option><option value="traits"></option><option value="extensionFunctions"></option><option value="functionLiterals"></option><option value="multi-assignment"></option><option value="operator-overloading"></option><option value="nullability"></option><option value="slide-30"></option><option value="slide-31"></option><option value="extann"></option><option value="pama"></option><option value="typesafe-builders"></option><option value="typesafe-builders-implementation"></option><option value="collections"></option><option value="tools"></option><option value="slide-38"></option><option value="slide-39"></option><option value="slide-40"></option><option value="slide-41"></option><option value="tooling"></option><option value="slide-43"></option><option value="slide-44"></option><option value="slide-45"></option><option value="slide-46"></option><option value="slide-47"></option><option value="demo-slide"></option><option value="summary"></option><option value="slide-50"></option><option value="slide-51"></option><option value="slide-52"></option><option value="try-kotlin"></option><option value="get-kotlin"></option><option value="resources"></option><option value="qa-slide"></option></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<!--<a href="./files/Kotlin-maintenant.htm" title="Permalink to this slide" class="deck-permalink">#</a>-->
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="./files/deck.core.js"></script>
+<script src="./files/deck.hash.js"></script>
+<script src="./files/deck.menu.js"></script>
+<script src="./files/deck.goto.js"></script>
+<script src="./files/deck.status.js"></script>
+<script src="./files/deck.navigation.js"></script>
+<script src="./files/deck.scale.js"></script>
+<!---->
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+
+</body></html>
