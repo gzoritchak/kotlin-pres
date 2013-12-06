@@ -2,192 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59edf6c0-a012-4502-b2cb-3a6e1e8a5f47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/ico/apple-touch-icon-144-precomposed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/carousel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/ico/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/grid.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/jumbotron-narrow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/jumbotron.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/justified-nav.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/navbar-fixed.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/navbar-static.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/navbar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/non-responsive.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/offcanvas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/sign-in.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/starter-template.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/sticky-footer-navbar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/sticky-footer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/screenshots/theme.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/CNAME" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/DOCS-LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/LICENSE-MIT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/ads.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/lib/angularjs/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/browserstack.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/carousel/carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/components.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/customize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/customizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/css/docs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/dropdowns.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/filesaver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/getting-started.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/glyphicons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/grid/grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/holder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_layouts/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/ie8-responsive-file-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/carousel/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/grid/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/jumbotron/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/jumbotron-narrow/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/justified-nav/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar-fixed-top/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar-static-top/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/non-responsive/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/offcanvas/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/signin/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/starter-template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/sticky-footer/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/sticky-footer-navbar/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/theme/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/input-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/javascript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/vendor/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/jszip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/jumbotron-narrow/jumbotron-narrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/jumbotron/jumbotron.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/jumbotron.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/justified-nav/justified-nav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/less.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-components.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-customize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-getting-started.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-javascript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/nav-main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar-fixed-top/navbar-fixed-top.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar-static-top/navbar-static-top.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/navbar/navbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/non-responsive/non-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/offcanvas/offcanvas.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/offcanvas/offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/old-bs-docs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/phantom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/css/pygments-manni.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/vendor/qunit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/vendor/qunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/raw-files.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/signin/signin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/_includes/social-buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/starter-template/starter-template.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/sticky-footer-navbar/sticky-footer-navbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/sticky-footer/sticky-footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/tdcService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/examples/theme/theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/js/tests/unit/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/docs-assets/js/uglify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/bootstrap-3.0.2/less/wells.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kotlin-mvc/src/main/java/humantalks/HumanControler.kt" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/java/humantalks/HumanControler.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/kotlin-mvc/src/main/webapp/WEB-INF/web.xml" />
+      <change type="DELETED" beforePath="C:\d\dev\kotlin\kotlin-mvc\src\main\webapp\js\tdcService.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kotlin.iws" />
@@ -282,7 +97,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="103" selection-start="570" selection-end="570" vertical-scroll-proportion="0.83538085" vertical-offset="0" max-vertical-offset="612">
+            <state line="3" column="36" selection-start="123" selection-end="123" vertical-scroll-proportion="-0.3783784" vertical-offset="205" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -536,7 +351,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1345,17 +1160,22 @@
       <workItem from="1386193258453" duration="9076000" />
       <workItem from="1386286209609" duration="1643000" />
     </task>
+    <task id="LOCAL-00001" summary="Branchement angularjs.">
+      <created>1386290693578</created>
+      <updated>1386290693578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17075000" />
+    <option name="totallyTimeSpent" value="17179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1432,9 +1252,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Branchement angularjs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Branchement angularjs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1561,13 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/tdcService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="366" selection-end="366" vertical-scroll-proportion="0.1761658" vertical-offset="102" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kotlin-mvc/src/main/java/humantalks/Configs.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="16" selection-start="553" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -1605,7 +1421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kotlin-mvc/src/main/webapp/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="103" selection-start="570" selection-end="570" vertical-scroll-proportion="0.83538085" vertical-offset="0" max-vertical-offset="612">
+        <state line="3" column="36" selection-start="123" selection-end="123" vertical-scroll-proportion="-0.3783784" vertical-offset="205" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
