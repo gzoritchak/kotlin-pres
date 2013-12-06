@@ -41,7 +41,7 @@
             <div class="vcenter">
                 <h1>Kotlin</h1>
                 <h2>C'est maintenant</h2>
-                <h3>Gaëtan Zoritchak</h3>
+                <!--<h3>Gaëtan Zoritchak</h3>-->
             </div>
         </div></div>
     </section>
@@ -66,6 +66,9 @@
             <li >Typage statique</li>
             <li >Pour la JVM et le navigateur (JavaScript)</li>
             <li >Open-source avec contributions de la communauté</li>
+            <li >Interoperabilité Java complète<br>
+                <small>generics, surcharges, arrays, primitives...</small></li>
+            <li >Compilation et runtime aussi performants que Java</li>
             <!--<li class="slide">available today as pre-beta (M2) release</li>-->
         </ul></div>
 
@@ -81,18 +84,6 @@
 
 
 
-    <section class="slide deck-after" id="design-goals">
-        <div class="deck-slide-scaler" style=""><h2>Objectifs</h2><ul class="">
-            <li >Interoperabilité Java complète<br>
-                <small>generics, surcharges, arrays, primitives...</small></li>
-            <li >Compilation et runtime aussi performants que Java</li>
-            <!--<li class="slide deck-after" id="slide-12">Plus expressif que java</li>-->
-            <li >Évite plus d'erreurs que Java</li>
-            <li >Suffisament simple pour être appris par des développeurs «ordinaires»</li>
-            <!--<li class="slide deck-after" id="slide-15">Efficient tooling from the very beginning</li>-->
-        </ul></div>
-
-    </section>
 
 
     <!--
@@ -160,11 +151,9 @@
     -->
 
     <section class="slide deck-after" id="hello-world">
-        <div class="deck-slide-scaler" style=""><h2>Hello World</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">package</span><span style="background-color:#ffffff;"> hello        </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// optional semicolons
+        <div class="deck-slide-scaler" style=""><h2>Hello World</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">package</span><span style="background-color:#ffffff;"> hello        </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 
-// namespace-level functions
-// types on the right
-// no special syntax for arrays
+
 </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> main(args: Array&lt;String&gt;): Unit {
     </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"Hello, world!"</span><span style="background-color:#ffffff;">)
 }</span></code></pre></div>
@@ -172,22 +161,21 @@
     </section>
 
     <section class="slide deck-after" id="helloClass">
-        <div class="deck-slide-scaler" style=""><h2>Classes</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> User(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">name</span><span style="background-color:#ffffff;">: String,     </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// primary constructor
+        <div class="deck-slide-scaler" style=""><h2>Classes</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> User(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">name</span><span style="background-color:#ffffff;">: String,     </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">           </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">age</span><span style="background-color:#ffffff;">: Int) {
-    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// name and age become public properties
-
+    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> fullName() = </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">name</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">, age </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">$</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">age</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"
-</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// shorthand syntax for single-expression functions
+</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">}
 
 </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(User(</span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"John Doe"</span><span style="background-color:#ffffff;">, </span><span style="color:#0000ff;background-color:#ffffff;">30</span><span style="background-color:#ffffff;">).fullName())
-</span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// no 'new' in constructor calls</span></code></pre></div>
+</span><span style="color:#808080;background-color:#ffffff;font-style:italic;"></span></code></pre></div>
 
     </section>
 
     <section class="slide deck-after" id="traits">
         <div class="deck-slide-scaler" style=""><h2>Traits</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">trait</span><span style="background-color:#ffffff;"> StuffContainer {
-  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> isEmpty(): Boolean    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// abstract by default
+  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> isEmpty(): Boolean    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">  </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> containsStuff(): Boolean = !isEmpty()
 }
 
@@ -202,16 +190,16 @@ list.add(</span><span style="color:#008000;background-color:#ffffff;font-weight:
 
     <section class="slide deck-after" id="extensionFunctions">
         <div class="deck-slide-scaler" style=""><h2>Extension Functions</h2><pre><code><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> String.iterator() = StringIterator(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">this</span><span style="background-color:#ffffff;">)
-  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// 'this' means object on which extension function was invoked
+  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 
 </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">class</span><span style="background-color:#ffffff;"> StringIterator(</span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">s</span><span style="background-color:#ffffff;">: String) : Iterator&lt;Char&gt; {
     </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">private</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">var</span><span style="background-color:#ffffff;"> </span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#f5d7ef;font-weight:bold;">i</span></span><span style="background-color:#ffffff;"> = </span><span style="color:#0000ff;background-color:#ffffff;">0
 </span><span style="background-color:#ffffff;">    </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">public</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">override</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">fun</span><span style="background-color:#ffffff;"> next(): Char = </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">s</span><span style="background-color:#ffffff;">[</span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">i</span></span><span style="background-color:#ffffff;">++]
     </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">public</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">override</span><span style="background-color:#ffffff;"> </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">val</span><span style="background-color:#ffffff;"> </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">hasNext</span><span style="background-color:#ffffff;">: Boolean
-        </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">get</span><span style="background-color:#ffffff;">() = </span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">i</span></span><span style="background-color:#ffffff;"> &lt; </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">s</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">size</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// property getter
+        </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">get</span><span style="background-color:#ffffff;">() = </span><span style="text-decoration:underline;color:#000000"><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">i</span></span><span style="background-color:#ffffff;"> &lt; </span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;">s</span><span style="background-color:#ffffff;">.</span><span style="color:#660e7a;background-color:#ffffff;font-weight:bold;font-style:italic;">size</span><span style="background-color:#ffffff;">    </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">}
 
-<span style="color:#000080;background-color:#ffffff;font-weight:bold;">for</span><span style="background-color:#ffffff;"> (c </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">in</span><span style="background-color:#ffffff;"> </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"abcd"</span><span style="background-color:#ffffff;">) {  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">// calls "abcd".iterator()
+<span style="color:#000080;background-color:#ffffff;font-weight:bold;">for</span><span style="background-color:#ffffff;"> (c </span><span style="color:#000080;background-color:#ffffff;font-weight:bold;">in</span><span style="background-color:#ffffff;"> </span><span style="color:#008000;background-color:#ffffff;font-weight:bold;">"abcd"</span><span style="background-color:#ffffff;">) {  </span><span style="color:#808080;background-color:#ffffff;font-style:italic;">
 </span><span style="background-color:#ffffff;">    </span><span style="background-color:#ffffff;font-style:italic;">println</span><span style="background-color:#ffffff;">(c)
 }</span></span></code></pre></div>
 
