@@ -9,12 +9,13 @@ public class HumanController() {
 
     Autowired var humanRepo:HumanRepo? = null
 
-    RequestMapping(value=array("/"))
+    RequestMapping(value=array("/humans"))
     ResponseBody
-    fun listHumans()= humanRepo!!
-            .listHumans()
-            .filter { it.age < 60 }
-            .sortBy { it.age }
-            .reverse()
+    fun listHumans(RequestParam(required=false, defaultValue="200") ageMax:Int)=
+            humanRepo!!
+                .listHumans()
+                .filter { it.age < ageMax}
+                .sortBy { it.age }
+                .reverse()
 
 }
